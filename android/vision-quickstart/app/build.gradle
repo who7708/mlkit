@@ -47,7 +47,10 @@ android {
 
 repositories {
     // Depending on AndroidX Snapshot Builds to get the latest CameraX libs.
-    maven { url 'https://androidx.dev/snapshots/builds/6787662/artifacts/repository/' }
+    maven { url = 'https://maven.aliyun.com/repository/google' }
+    maven { url = 'https://maven.aliyun.com/repository/public' }
+    // maven { url = 'https://maven.aliyun.com/repository/gradle-plugin' }
+    // maven { url 'https://androidx.dev/snapshots/builds/6787662/artifacts/repository/' }
 }
 
 dependencies {

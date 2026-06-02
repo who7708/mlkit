@@ -4,9 +4,12 @@ buildscript {
     ext.kotlin_version = "1.9.0"
 
     repositories {
-        mavenCentral()
-        mavenLocal()
-        google()
+        maven { url = 'https://maven.aliyun.com/repository/google' }
+        maven { url = 'https://maven.aliyun.com/repository/public' }
+        // maven { url = 'https://maven.aliyun.com/repository/gradle-plugin' }
+        // mavenCentral()
+        // mavenLocal()
+        // google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.3.1'
@@ -19,9 +22,12 @@ buildscript {
 
 allprojects {
     repositories {
-        mavenCentral()
-        mavenLocal()
-        google()
+        maven { url = 'https://maven.aliyun.com/repository/google' }
+        maven { url = 'https://maven.aliyun.com/repository/public' }
+        // maven { url = 'https://maven.aliyun.com/repository/gradle-plugin' }
+        // mavenCentral()
+        // mavenLocal()
+        // google()
     }
 }
 
